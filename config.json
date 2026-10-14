@@ -1,0 +1,18 @@
+
+{
+    "dev": {
+        "name": "Development",
+        "version": "1.0",
+        "debug": true
+    },
+    "staging": {
+        "name": "Staging",
+        "version": "1.0",
+        "debug": true
+    },
+    "prod": {
+        "name": "Production",
+        "version": "1.0",
+        "debug": false
+    }
+}
