@@ -21,6 +21,14 @@ class TestDeployment(unittest.TestCase):
         self.assertIn("staging", config)
         self.assertIn("prod", config)
 
+    def test_environment_names(self):
+        with open("config.json", "r") as file:
+            config = json.load(file)
+
+        self.assertEqual(config["dev"]["name"], "Development")
+        self.assertEqual(config["staging"]["name"], "Staging")
+        self.assertEqual(config["prod"]["name"], "Production")
+
 
 if __name__ == "__main__":
     unittest.main()
